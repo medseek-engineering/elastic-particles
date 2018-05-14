@@ -1,36 +1,17 @@
 {
-  "name": "elastic-particles",
+  "name": "@influencehealth/elastic-particles",
   "version": "2.2.10",
   "description": "Building blocks for Elastic queries, filters, and aggregations which can be re-used, combed, and nested.",
-  "author": {
-    "name": "Thomas Beutler",
-    "email": "tcbeutler@gmail.com",
-    "url": "https://github.com/tcbeutler"
-  },
+  "author": "Thomas Beutler <tcbeutler@gmail.com> (https://github.com/tcbeutler)",
   "contributors": [
-    {
-      "name": "Influence Health",
-      "url": "https://github.com/medseek-engineering"
-    },
-    {
-      "name": "Nathan Stott",
-      "email": "nrstott@gmail.com",
-      "url": "https://github.com/nrstott"
-    },
-    {
-      "name": "Nathan Cooke",
-      "email": "nathancooke@gmail.com",
-      "url": "https://github.com/3choBoomer"
-    },
-    {
-      "name": "Dylan Hein",
-      "email": "dylanhein40@gmail.com",
-      "url": "https://github.com/dylanhein"
-    }
+    "Influence Health (https://github.com/medseek-engineering)",
+    "Nathan Stott <nrstott@gmail.com> (https://github.com/nrstott)",
+    "Nathan Cooke <nathancooke@gmail.com> (https://github.com/3choBoomer)",
+    "Dylan Hein <dylanhein40@gmail.com> (https://github.com/dylanhein)"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/3choboomer/elastic-particles.git"
+    "url": "git+https://github.com/medseek-engineering/elastic-particles.git"
   },
   "main": "lib/particles.js",
   "files": [
@@ -58,12 +39,18 @@
     "node"
   ],
   "bugs": {
-    "url": "https://github.com/3choboomer/elastic-particles/issues"
+    "url": "https://github.com/medseek-engineering/elastic-particles/issues"
   },
   "license": "BSD-2-Clause",
   "scripts": {
     "test": "mocha",
     "lint": "jshint -c test/.jshintrc lib",
     "docs": "jsdoc2md --global-index-format grouped ./lib/elasticQuery.js > elasticQuery.md && jsdoc2md --global-index-format grouped ./lib/aggregations/*.js > aggregations.md && jsdoc2md --global-index-format grouped ./lib/filters/*.js > filters.md && jsdoc2md --global-index-format grouped ./lib/queries/*.js > queries.md"
+  },
+  "homepage": "https://github.com/medseek-engineering/elastic-particles#readme",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
   }
 }
